@@ -1,0 +1,71 @@
+moving a set of list from one tower from antoher 
+there are 2 approch of it 
+
+
+
+
+1. we have three towers name are a , b, c .
+2. there are n disk of differnt size stack into tower a in sorted mammer 
+    largest at bottom and shsortest at the top 
+3 . to move all the disk from a to c tower but following certain condtions 
+    a. only one disk can be move at a time 
+    b. a disk can only be placed on top of a larger disk on a empty tower 
+    c. you have to use b as a obsalaiary tower 
+
+
+
+
+
+
+
+    ### What is Round Robin Scheduling?
+
+Round Robin (RR) is one of the simplest and widely used CPU scheduling algorithms, especially in time-sharing systems. In Round Robin, each process is assigned a fixed time slot, called a **time quantum** or **time slice**, in which it can execute. If a process doesn't complete within this time quantum, it is paused and placed at the back of the queue, and the next process in the queue gets its turn. This cycle continues until all processes are completed.
+
+### Key Features of Round Robin:
+1. **Preemptive Scheduling**: If a process does not finish during its time quantum, it is preempted, meaning the CPU is taken away from it and given to the next process.
+2. **Time Quantum**: A fixed amount of time (usually small) is allocated to each process. The smaller the quantum, the more responsive the system becomes, but this increases the overhead due to more context switching.
+3. **Fairness**: Every process gets an equal share of CPU time, which prevents starvation (i.e., no process is left waiting indefinitely).
+4. **Context Switching**: The CPU switches between processes frequently, which allows multiple processes to run in parallel in a simulated way.
+
+### Steps in Round Robin Scheduling:
+1. **Assign Time Quantum**: All processes get a fixed amount of time, say 2 units, to execute.
+2. **Start Execution**: Begin execution from the first process.
+3. **Preempt if Needed**: If a process finishes before its time quantum ends, it’s removed from the queue. If it’s still executing when the time quantum is up, it is preempted and moved to the end of the queue.
+4. **Continue in a Cycle**: The CPU moves to the next process and repeats the cycle until all processes are complete.
+
+### Example of Round Robin:
+Let's consider 3 processes:
+- Process 1: Burst Time = 10 units
+- Process 2: Burst Time = 5 units
+- Process 3: Burst Time = 8 units
+- Time Quantum = 2 units
+
+#### Execution Steps:
+1. **P1 executes for 2 units** → Remaining Burst Time of P1 = 8
+2. **P2 executes for 2 units** → Remaining Burst Time of P2 = 3
+3. **P3 executes for 2 units** → Remaining Burst Time of P3 = 6
+4. **P1 executes for 2 units** → Remaining Burst Time of P1 = 6
+5. **P2 executes for 2 units** → Remaining Burst Time of P2 = 1
+6. **P3 executes for 2 units** → Remaining Burst Time of P3 = 4
+7. **P1 executes for 2 units** → Remaining Burst Time of P1 = 4
+8. **P2 executes for 1 unit** → Process 2 finishes
+9. **P3 executes for 2 units** → Remaining Burst Time of P3 = 2
+10. **P1 executes for 2 units** → Remaining Burst Time of P1 = 2
+11. **P3 executes for 2 units** → Process 3 finishes
+12. **P1 executes for 2 units** → Process 1 finishes
+
+### Advantages of Round Robin:
+1. **Simple and Fair**: Every process gets an equal share of the CPU.
+2. **Good for Time-Sharing Systems**: It ensures all users/processes get a turn in a multi-user environment.
+3. **Prevents Starvation**: Since every process is guaranteed CPU time, no process is starved.
+
+### Disadvantages of Round Robin:
+1. **High Context-Switching Overhead**: Frequent switching between processes can lead to significant overhead, especially if the time quantum is too small.
+2. **Response Time**: If the time quantum is large, processes may take a long time to get their turn, leading to delays in response time.
+
+### Choosing the Time Quantum:
+- **Too Large**: It behaves like a First-Come, First-Serve (FCFS) algorithm, where processes with long burst times dominate the CPU.
+- **Too Small**: It increases context switching overhead, reducing CPU efficiency.
+
+In essence, Round Robin is all about balancing fairness with performance, and the time quantum is the key factor in determining its effectiveness.
