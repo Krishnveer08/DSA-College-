@@ -1,15 +1,6 @@
 // Experiment 4: Implement Queue using an Array: Customer Service Queue Management System
-// WAP to develop a simple customer service queue management system for a retail store. The system should manage 
-// customers waiting in line to be served. You need to implement this functionality using both an array.
-// Requirements:
-// 1.
-// Queue Operations: Implement the following operations:
-// Enqueue: Add a customer to the end of the queue when they arrive.
-// Dequeue: Remove the customer at the front of the queue when they are served.
-// Peek: View the customer at the front of the queue without removing them.
-// Display: Show all customers currently in the queue.
-// 2.
-// Input Validation: Ensure the user can’t dequeue from an empty queue or enqueue into a full queue.
+
+
 #include<stdio.h>
 #include<stdlib.h>
 int front = -1;
