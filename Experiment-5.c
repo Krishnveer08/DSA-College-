@@ -1,19 +1,7 @@
 // Experiment 5: Implement LinkedList:
-// You are developing a simple task management system for a personal productivity application. 
-// The system will manage a list of tasks that a user needs to complete. Each task can be added to the list, marked as completed, or removed from the list. 
-// The user should also be able to view all current tasks.
-// Requirements:
-// 1.
-// Task Structure: Each task should have the following attributes:
-// Task ID (unique identifier)
-// Task description (text)
-// Status (e.g., "Pending" or "Completed")
-// 2.
-// Linked List Operations:
-// Add Task: Allow the user to add a new task to the end of the list.
-// Remove Task: Allow the user to remove a task by its ID.
-// Mark Task as Completed: Allow the user to update a task's status to "Completed."
-// Display Tasks: Provide a way for the user to view all current tasks in the list.
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
 
