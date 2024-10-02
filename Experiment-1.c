@@ -1,5 +1,6 @@
 // Experiment 1: WAP to insert an element in the array at the beginning, at the end, and at a specific 
-// position. Use a menu-driven approach to define the user-defined function for the given task. 
+
+
 #include<stdio.h>
 int maxsize = 5;
 int crrSize=1;
