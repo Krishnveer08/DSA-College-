@@ -1,7 +1,7 @@
 // Experiment 2: Write a simple C program on a 32-bit compiler to understand the concept of array 
-// storage, the size of a word. The program shall be written illustrating the concept of row major and 
-// column-major storage. Find the address of the element and verify it with the theoretical value. The 
-// program may be written for arrays up to 4 dimensions. 
+
+
+
 
 #include<stdio.h>
 int main(){
